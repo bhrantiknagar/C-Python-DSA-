@@ -17,15 +17,12 @@ int main() {
     pos = strstr(str, sub);
 
     if (pos != NULL) {
-        // Copy part before substring
         int index = pos - str;
         strncpy(result, str, index);
         result[index] = '\0';
 
-        // Add ***
         strcat(result, "***");
 
-        // Add remaining part after substring
         strcat(result, pos + strlen(sub));
 
         printf("String after replacement: %s\n", result);

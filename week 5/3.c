@@ -8,17 +8,14 @@ int queue[MAX];
 int front = -1;
 int rear = -1;
 
-// Check if queue is empty
 int isEmpty() {
     return front == -1;
 }
 
-// Check if queue is full
 int isFull() {
     return rear == MAX - 1;
 }
 
-// Add an element to the queue
 void enqueue(int value) {
     if (isFull()) {
         printf("Queue Overflow\n");
@@ -32,7 +29,6 @@ void enqueue(int value) {
     printf("%d inserted into queue\n", value);
 }
 
-// Remove an element from the queue
 int dequeue() {
     int value;
 
@@ -43,7 +39,6 @@ int dequeue() {
 
     value = queue[front++];
 
-    // Reset queue when it becomes empty
     if (front > rear) {
         front = -1;
         rear = -1;
@@ -52,7 +47,6 @@ int dequeue() {
     return value;
 }
 
-// Display the front element
 int getFront() {
     if (isEmpty()) {
         printf("Queue is empty\n");
@@ -62,7 +56,6 @@ int getFront() {
     return queue[front];
 }
 
-// Display the rear element
 int getRear() {
     if (isEmpty()) {
         printf("Queue is empty\n");
@@ -72,7 +65,6 @@ int getRear() {
     return queue[rear];
 }
 
-// Display the queue
 void display() {
     int i;
 

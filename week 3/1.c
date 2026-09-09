@@ -7,7 +7,6 @@ int main() {
     int a[3][3], transpose[3][3];
     int i, j;
 
-    // Input the matrix
     printf("Enter elements of 3x3 matrix:\n");
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {
@@ -15,14 +14,12 @@ int main() {
         }
     }
 
-    // Find transpose
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {
             transpose[j][i] = a[i][j];
         }
     }
 
-    // Display transpose
     printf("\nTranspose of the matrix:\n");
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {

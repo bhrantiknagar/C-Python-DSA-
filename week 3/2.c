@@ -7,7 +7,6 @@ int main() {
     int a[3][3];
     int i, j, sum = 0;
 
-    // Input matrix
     printf("Enter elements of 3x3 matrix:\n");
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {
@@ -15,7 +14,6 @@ int main() {
         }
     }
 
-    // Print diagonal elements and calculate sum
     printf("\nDiagonal elements are: ");
     for (i = 0; i < 3; i++) {
         printf("%d ", a[i][i]);

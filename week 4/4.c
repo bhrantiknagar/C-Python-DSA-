@@ -11,7 +11,6 @@ int main() {
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
 
-    // Convert to toggle case
     for (i = 0; str[i] != '\0'; i++) {
         if (islower(str[i])) {
             str[i] = toupper(str[i]);

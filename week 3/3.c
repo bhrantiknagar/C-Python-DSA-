@@ -7,7 +7,6 @@ int main() {
     int a[3][3];
     int i, j, sum;
 
-    // Input matrix
     printf("Enter elements of 3x3 matrix:\n");
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {
@@ -15,7 +14,6 @@ int main() {
         }
     }
 
-    // Calculate sum of each row
     for (i = 0; i < 3; i++) {
         sum = 0;
         for (j = 0; j < 3; j++) {

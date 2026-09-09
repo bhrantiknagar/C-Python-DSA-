@@ -12,7 +12,6 @@ int main() {
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
 
-    // Convert first letter of each word to uppercase
     for (i = 0; str[i] != '\0'; i++) {
         if (i == 0 || str[i - 1] == ' ') {
             str[i] = toupper(str[i]);
