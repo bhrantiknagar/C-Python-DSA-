@@ -40,7 +40,7 @@ int dequeue() {
         printf("Queue Underflow\n");
         return -1;
     }
-   
+    
     value = queue[front];
 
     if (front == rear) {
